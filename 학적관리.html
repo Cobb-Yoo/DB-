@@ -15,7 +15,7 @@
 		margin-left:10px;
 		display:inline-block;
 		height:100%;
-		width:calc(100% - 250px);
+		width: 1670px;
 	}
 	.naviStyles {
 		padding:10px;
@@ -35,7 +35,6 @@
 	#cont {
 		margin:10px;
 		height:70%;
-		background-color:red;
 	}
 	#cont_title {
 		padding-left : 2px;
@@ -49,10 +48,17 @@
 		color : rgb(41, 128, 185);
 		background-color:rgba(41, 128, 185, 0.17);
 	}
-	.top {height:100px;}
+	.top {
+		height:100px;
+		width : 1900px;
+		}
 	.middle {
 		height:600px;
+		width : 1900px;
 		margin-top : 35px;
+	}
+	.cont_item{
+		display: inline-block;
 	}
 	
 </style>
@@ -74,8 +80,16 @@
 		</div>
 		<div > </div>
 		<div class = "conts_div">
-			<div id = "cont_title"> contents_title </div>
-			<div id = "cont"> content </div>
+			<div id = "cont_title"> 학적관리 </div>
+			<div id = "cont">
+				<img src="title.jpg" class = "cont_item">
+				<table class = "cont_item">
+					<tr><td>학번</td><td>20161501</td><td>성명</td><td>유형진</td></tr>
+					<tr><td>주민번호</td><td>12345679</td><td>대학</td><td>과학기술대학</td></tr>
+					<tr><td>학부/과</td><td>컴퓨터공학과</td><td>학생구분</td><td>학사</td></tr>
+					<tr><td>학년</td><td>4</td><td>학적상태</td><td>재학</td></tr>
+				</table>
+			</div>
 		</div>
 	<div>
 <div>
