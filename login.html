@@ -1,8 +1,8 @@
 <!DOCTYPE HTML>
 <html>
 <head>
-<link rel="shortcut icon" type="imageâ„x-icon" href="./title.jpg">
-<title> ê°•ë¦‰ì›ì£¼ëŒ€í•™êµ </title>
+<link rel="shortcut icon" type="image?ï¿½ï¿½x-icon" href="./title.jpg">
+<title> °­¸ª¿øÁÖ´ëÇĞ±³ </title>
 </head>
 <style>
 	#outsider{
@@ -31,24 +31,26 @@
 	}
 </style>
 <body>
-
+<form action="checkLogin.php" method="POST">
 <center id="outsider">
-		<div id="title_image">
+	<div id="title_image">
 		<img src="./title.jpg">
 	</div>
+
 	<div id="login">
-		<div>
+		<div> 
 			<label for="inputUsername"><img src="./user.svg" class="loginImage"></label>
-			<input type="text" value="Username" class="inputData" id="inputUsername"></input>
+			<input type="text" value="Username" class="inputData" id="inputUsername" name="html_id"></input>
 		</div>
 		<div>
 			<label for="inputPassword"><img src="./key.svg" class="loginImage"></label>
-			<input type="text" value="****" class="inputData" id="inputPassword"></input>
+			<input type="text" value="****" class="inputData" id="inputPassword" name="html_password"></input>
 		</div>
 		<div>
-			<input  id= "loginButton" type="button" value="ë¡œê·¸ì¸" > 
+			<input id= "loginButton" type="submit" name ="login", value="·Î±×ÀÎ"> 
 		</div>
 	</div>
 </center>
+</form>
 </body>
 </html>
