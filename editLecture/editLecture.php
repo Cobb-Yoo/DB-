@@ -12,12 +12,12 @@
 <body> 
 <div>
 	<div class="top">
-		<? include "../title.php"?>
+		<?include "../title.php"?>
 	</div>
 	<div class="middle">
 	    <?include "../nav.php"?>
 		
-		<?include "register_CON.php"?>
+		<?include "editLecture_CON.php"?>
 	<div>
 <div>
 </body>

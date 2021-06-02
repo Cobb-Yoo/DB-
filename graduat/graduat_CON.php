@@ -11,7 +11,6 @@
 		</div>
 
 		<div id = "cont">
-			<img src="apple.jpg" class = "cont_item">
 
 			<table>
 				<?php

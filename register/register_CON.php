@@ -11,8 +11,6 @@
 		</div>
 
 		<div id = "cont">
-			<img src="../img/apple.jpg" class = "cont_item">
-
 			<table>
 				<?php
 					$user_id = $_SESSION['user_id'];
