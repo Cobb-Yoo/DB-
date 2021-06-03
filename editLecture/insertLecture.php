@@ -12,8 +12,6 @@
     $query = "insert into course values('','$cname','$pid','$state','$grade','$days','$how')";
 	$result = mysql_query($query,$connect);
 
-    
-	mysql_close($connect);
     //강제이동
     header("Location: ./editLecture.php");
 ?>

@@ -15,7 +15,7 @@
 		</div>
 
 		<div id = "cont">
-            <form action="./add.php" method="POST">
+            <form action="./insertLecture.php" method="POST">
 			    <input class = "inputLecture", tpye="text" name='cname' placeholder="수업이름">
                 <input class = "inputLecture", tpye="text" name='state' placeholder="전공/교양">
                 <input class = "inputLecture", tpye="text" name='grade' placeholder="학점">

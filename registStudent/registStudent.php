@@ -1,5 +1,4 @@
 <?
-	include "../connectDB.php";
 	session_start();
 ?>
 
@@ -9,6 +8,7 @@
 <title> 강릉원주대학교 </title>
 <link rel="stylesheet" href="../css/normal.css" type="text/css">
 </head>
+
 <body> 
 <div>
 	<div class="top">
@@ -17,7 +17,7 @@
 	<div class="middle">
 	    <?include "../nav.php"?>
 		
-		<?include "register_CON.php"?>
+		<?include "registStudent_CON.php"?>
 	<div>
 <div>
 </body>

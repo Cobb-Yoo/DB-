@@ -25,7 +25,7 @@
 					$query = "select dname from dept where did = '$info[6]'";
 					$result = mysql_query($query, $connect);
 					$dname = mysql_fetch_array($result);
-				
+
 					echo '<tr><td>학번</td><td>'.$info[0].'</td><td>이름</td><td>'.$info[1].'</td></tr>';
 					echo '<tr>
 					<td>학년</td>
