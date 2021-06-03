@@ -14,7 +14,7 @@
 		$info=mysql_fetch_array($result);
 		$_SESSION['user_id'] = $info[2];
 
-		Header ("Location: ./register/register.php");
+		Header ("Location: ./regist/regist.php");
 	}
 	else{
 		echo "´Ù½Ã!";

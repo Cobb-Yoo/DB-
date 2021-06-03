@@ -47,7 +47,11 @@
 					</tr>';
 					
 				?>
+
 			</table>
+			<form action="./password.php" method="POST">
+				<input type="submit" value="비밀번호 바꾸기">
+			<form>
 		</div>
 	</div>
 </body>
