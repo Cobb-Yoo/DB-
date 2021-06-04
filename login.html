@@ -37,27 +37,32 @@
 </style>
 
 <body>
-	<form action="./checkLogin.php" method="POST">
-		<center id="outsider">
-			<div id="title_image">
-				<img src="./img/title.jpg">
-			</div>
-
-			<div id="login">
-				<div>
-					<label for="inputUsername"><img src="./img/user.svg" class="loginImage"></label>
-					<input type="text" placeholder="Username" class="inputData" id="inputUsername" name="html_id"></input>
-				</div>
-				<div>
-					<label for="inputPassword"><img src="./img/key.svg" class="loginImage"></label>
-					<input type="text" placeholder="****" class="inputData" id="inputPassword" name="html_password"></input>
-				</div>
-				<div>
-					<input id="loginButton" type="submit" name="login" , value="로그인">
-				</div>
+	<center id="outsider">
+		<div id="title_image">
+			<img src="./img/title.jpg">
+		</div>
+		
+		<div id="login">
+				<form action="./checkLogin.php" method="POST">
+					<div>
+						<label for="inputUsername"><img src="./img/user.svg" class="loginImage"></label>
+						<input type="text" placeholder="Username" class="inputData" id="inputUsername" name="html_id"></input>
+					</div>
+					<div>
+						<label for="inputPassword"><img src="./img/key.svg" class="loginImage"></label>
+						<input type="text" placeholder="password" class="inputData" id="inputPassword" name="html_password"></input>
+					</div>
+					<div>
+						<input type="radio" value='student' name='radioCheck' checked='checked'> 학생
+						<input type="radio" value='assistant' name='radioCheck'> 조교
+						<input type="radio" value='professor' name='radioCheck'> 교수
+					</div>
+					<div>
+						<input id="loginButton" type="submit" name="login" , value="로그인">
+					</div>
+				</form>
 			</div>
 		</center>
-	</form>
 </body>
 
 </html>
