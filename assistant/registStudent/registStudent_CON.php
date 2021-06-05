@@ -25,6 +25,46 @@
                 <input class = "inputLecture", tpye="text" name='cos' placeholder="구분">
                 <input type="submit" name="login" , value="등록">
             </form>
+
+            <?
+                $query = "select * from dept";
+				$result = mysql_query($query, $connect);
+                $len = mysql_num_rows($result);
+
+                echo '<table>';
+                echo '<tr><td>학과코드</td><td>학과이름</td></tr>';
+                for($i=0;$i<$len;$i++){
+                    echo "<tr>";
+                    
+				    $info = mysql_fetch_array($result);
+                    for($j=0;$j<count($info)/2;$j++){
+                        echo '<td>'.$info[$j].'</td>';
+                    }
+                    echo "</tr>";
+                }
+                echo '</table>';
+            ?>
+
+            <hr>
+
+            <?
+                $query = "select * from colleage";
+				$result = mysql_query($query, $connect);
+                $len = mysql_num_rows($result);
+
+                echo '<table>';
+                echo '<tr><td>대학코드</td><td>대학이름</td></tr>';
+                for($i=0;$i<$len;$i++){
+                    echo "<tr>";
+                    
+				    $info = mysql_fetch_array($result);
+                    for($j=0;$j<count($info)/2;$j++){
+                        echo '<td>'.$info[$j].'</td>';
+                    }
+                    echo "</tr>";
+                }
+                echo '</table>';
+            ?>
 		</div>
 	</div>
 </body>
