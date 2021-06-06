@@ -24,6 +24,6 @@
         
         <a href='/login.html' style="text-decoration='none'"> 로그아웃 </a>
     </div>
-    <div id = "title">강릉원주대학교 학사관리 시스템 </div>
+    <div id = "title">강릉원주대학교 학사관리 시스템 - 교수</div>
 </body>
 </html>

@@ -14,13 +14,14 @@
 		</div>
 
 		<div id = "cont">
-            <form action="./editDept.php" method="POST">
-			    <input class = "inputLecture", tpye="text" name='did' placeholder="학과코드입력">
-                <input type="submit", value="확인">
-            </form>
-            <hr>
-            <br>
             <?
+            echo "<form action='insertDept.php' method='POST'>";
+                    echo "<input type='text' placeholder='학과아이디' name='did'>";
+                    echo "<input type='text' placeholder='학과이름' name='dname'>";
+                    echo '<td><input type="submit"></td>';
+                echo '</form>';
+            echo "<hr>";
+            echo "<br>";
                 $query = "select * from dept";
 				$result = mysql_query($query, $connect);
                 $len = mysql_num_rows($result);

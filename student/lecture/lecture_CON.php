@@ -22,7 +22,7 @@
 					
 					echo "<tr><td>수업이름</td><td>담당교수</td><td>전공/교양</td><td>학점</td><td>요일</td><td>수업형태</td><td>수강신청</td></tr>";
 					for($i=0;$i<$len;$i++){
-						echo '<form action="checkLecture.php" method="POST">';
+						echo '<form action="updateLecture.php" method="POST">';
 						echo "<tr>";
 						$info = mysql_fetch_array($result);
 
