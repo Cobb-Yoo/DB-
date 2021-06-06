@@ -19,8 +19,6 @@
     $result = mysql_query($query,$connect);
     $query = "update student set did = '$did' where sid = '$sid'";
     $result = mysql_query($query,$connect);
-    $query = "update student set ssn = '$ssn' where sid = '$sid'";
-    $result = mysql_query($query,$connect);
     $query = "update student set colid = '$colid' where sid = '$sid'";
     $result = mysql_query($query,$connect);
     $query = "update student set cos = '$cos' where sid = '$sid'";
@@ -28,5 +26,5 @@
 
     
     //강제이동
-    header("Location: ../mangeStudent/mangeStudent.php");
+    //header("Location: ../mangeStudent/mangeStudent.php");
 ?>

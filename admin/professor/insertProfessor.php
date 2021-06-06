@@ -13,7 +13,7 @@
 
     if($len >= 1){
         echo '<script>alert("이미 등록된 아이디입니다. 다시 입력해주세요")</script>';
-        echo '<script>window.location = "./editProfessor.php"</script>';
+        echo '<script>window.location = "./manageProfessor.php"</script>';
     }
     else if($len == 0){
         $query = "insert into professor value('$pid', '$pname', '$did')";

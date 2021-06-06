@@ -21,7 +21,7 @@
 	<div class="middle">
         <? include "../nav.php"?>
 
-        <? include "./manageProfessor_CON.php"?>
+        <? include "./manageColleage_CON.php"?>
 	<div> 
 <div>
 </body>

@@ -21,7 +21,7 @@
 				$result = mysql_query($query, $connect);
                 $len = mysql_num_rows($result);
 
-                echo "<form action='intsertProfessor.php' method='POST'>";
+                echo "<form action='insertProfessor.php' method='POST'>";
                     echo "<input type='text' placeholder='교수이름' name='pname'>";
                     echo "<input type='text' placeholder='교수아이디' name='pid'>";
                     echo "<input type='text' placeholder='교수비밀번호' name='password'>";
