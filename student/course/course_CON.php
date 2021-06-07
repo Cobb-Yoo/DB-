@@ -11,15 +11,14 @@
 		</div>
 
 		<div id = "cont">
-
-			<table>
+			<center>
+			<table style="border:0px; width:1500px; text-align: center; font-size: 27px;">
 				<?php
 					$user_id = $_SESSION['user_id'];
 					$query = "select course.* from class, course where class.sid = '$user_id' and class.cid = course.cid";
 					$result = mysql_query($query, $connect);
 					$len = mysql_num_rows($result);
 
-					echo "<table>";
 					echo "<tr><td>과목명</td><td>담당교수</td><td>전공/교양</td><td>학점</td><td>요일</td><td>방법</td></tr>";
 					for($i=0;$i<$len;$i++){
 						echo '<form action="deleteCourse.php" method="POST">';
@@ -31,18 +30,18 @@
 						$pname = mysql_fetch_array($result2);
 
 						for($j=1;$j < count($info)/2;$j++){
-							if($j == 2) echo "<td>".$pname[0]."</td>";
-							else echo "<td>".$info[$j]."</td>";
+							if($j == 2) echo '<td bgcolor="#ABC3F5">'.$pname[0].'</td>';
+							else echo '<td bgcolor="#ABC3F5">'.$info[$j].'</td>';
 						}
 						echo "<input type='hidden' name=data value='$info[0]'>";
-						echo "<td><input type='submit' value='수강취소'></td>";
+						echo '<td bgcolor="#ABC3F5"><input type="submit" value="수강취소"></td>';
 						echo "</tr>";
 						echo '</form>';
 					}
-					echo "</table>";
 					
-				?>
+					?>
 			</table>
+			</center>
 		</div>
 	</div>
 </body>

@@ -10,8 +10,8 @@
 		</div>
 
 		<div id = "cont">
-
-			<table>
+			<center>
+			<table style="border:0px; width:1500px; text-align: center; font-size: 27px;">
 				<?php
 					$user_id = $_SESSION['user_id'];
 					$query = "select student.* from student where student.did = (select did from assistant where aid = '$user_id')";
@@ -45,6 +45,7 @@
 					}
 				?>
 			</table>
+			</center>
 		</div>
 	</div>
 </body>

@@ -26,12 +26,12 @@
                 <input type="submit" name="login" , value="등록">
             </form>
 
+            <table >
             <?
                 $query = "select * from dept";
 				$result = mysql_query($query, $connect);
                 $len = mysql_num_rows($result);
 
-                echo '<table>';
                 echo '<tr><td>학과코드</td><td>학과이름</td></tr>';
                 for($i=0;$i<$len;$i++){
                     echo "<tr>";
@@ -42,8 +42,8 @@
                     }
                     echo "</tr>";
                 }
-                echo '</table>';
-            ?>
+                ?>
+            </table>
 
             <hr>
 

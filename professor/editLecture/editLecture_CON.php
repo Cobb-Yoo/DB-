@@ -27,7 +27,8 @@
             <hr><br>
 
             <div>
-                <table>
+                <center>
+                <table style="border:0px; width:500px; text-align: center; font-size: 27px;">
                 <tr><td>수업이름</td><td>수업요일</td></tr>
                 <?
                     $pid = $_SESSION['user_id'];
@@ -39,12 +40,14 @@
 				    	echo "<tr>";
 
 					    for($j=1;$j<count($info)/2;$j++){
-						    if($j == 1 || $j == 5)echo '<td>'.$info[$j].'</td>';
+						    if($j == 1) echo '<td  bgcolor="#ABC3F5">'.$info[$j].'</td>';
+                            else if($j == 5) echo '<td  bgcolor="#F0F4E0">'.$info[$j].'</td>';
 					    }
 					    echo "</tr>";
 				    }
                 ?>
                 </table>
+                </center>
             </div>
 		</div>
 
